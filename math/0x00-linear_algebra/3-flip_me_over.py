@@ -13,7 +13,7 @@ def matrix_transpose(matrix):
     start = 0
     new_level = True
     tracker = start
-    while True:
+    while start != level_size:
         if tracker >= len(flat_matrix):
             new_matrix.append(transpose)
             new_level = True
@@ -25,6 +25,4 @@ def matrix_transpose(matrix):
         transpose.append(flat_matrix[tracker])
         tracker += level_size
 
-        if start == level_size:
-            break
     return new_matrix
