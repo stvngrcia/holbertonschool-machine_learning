@@ -5,7 +5,7 @@
 def matrix_transpose(matrix):
     """Transposes a matrix
     :param matrix: The given matrix to transpose
-    :return: A transpose matrix
+    :return: A transposed matrix
     """
     new_matrix = []
     flat_matrix = sum(matrix, [])
