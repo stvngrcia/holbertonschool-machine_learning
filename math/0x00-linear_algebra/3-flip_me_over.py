@@ -9,7 +9,7 @@ def matrix_transpose(matrix):
     """
     new_matrix = []
     flat_matrix = sum(matrix, [])
-    level_size = len(matrix[0])
+    level_size = len(matrix[0]) if matrix else 0
     start = 0
     new_level = True
     tracker = start
