@@ -11,7 +11,8 @@ def add_matrices2D(mat1, mat2):
 
     if len(mat1) != len(mat2):
         return None
-    new_matrix = [add_arrays(mat1[idx], mat2[idx]) for idx, _ in enumerate(mat1)]
+    new_matrix = [add_arrays(mat1[idx], mat2[idx])
+                  for idx, _ in enumerate(mat1)]
     return new_matrix if new_matrix[0] else None
 
 
