@@ -7,6 +7,8 @@ def matrix_transpose(matrix):
     :param matrix: The given matrix to transpose
     :return: A transposed matrix
     """
+    if len(matrix) == 1:
+        return matrix[:]
     new_matrix = []
     flat_matrix = sum(matrix, [])
     level_size = len(matrix[0]) if matrix else 0
